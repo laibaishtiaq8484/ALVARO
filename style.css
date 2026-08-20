@@ -27,9 +27,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-
-
 .header {
     position: sticky;
     top: 0;
@@ -37,7 +34,6 @@ a {
     background: rgba(245, 241, 233, 0.95);
     border-bottom: 1px solid #ded8cd;
 }
-
 .navbar {
     max-width: 1250px;
     margin: auto;
@@ -50,7 +46,6 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-
 .logo {
     font-size: 27px;
     font-weight: 800;
@@ -97,8 +92,6 @@ a {
     margin-left: 5px;
     font-weight: bold;
 }
-
-
 .hero {
     max-width: 1250px;
     min-height: 650px;
@@ -186,9 +179,6 @@ a {
 
     display: block;
 }
-
-
-
 .categories {
     max-width: 1250px;
     margin: auto;
@@ -232,19 +222,12 @@ a {
     border-color: #25352f;
     color: white;
 }
-
-
-/* =========================
-   SHOP
-========================= */
-
 .shop {
     max-width: 1250px;
     margin: auto;
 
     padding: 70px 25px 110px;
 }
-
 .shop-top {
     display: flex;
     justify-content: space-between;
@@ -252,7 +235,6 @@ a {
 
     margin-bottom: 40px;
 }
-
 .search-box input {
     width: 280px;
 
@@ -270,9 +252,6 @@ a {
 .search-box input:focus {
     border-color: #c96d4b;
 }
-
-
-
 .products-grid {
     display: grid;
 
@@ -280,7 +259,6 @@ a {
 
     gap: 28px;
 }
-
 .product-card {
     background: #eee8dd;
 
@@ -290,11 +268,9 @@ a {
 
     overflow: hidden;
 }
-
 .product-card:hover {
     transform: translateY(-7px);
 }
-
 .product-image-box {
     height: 330px;
 
@@ -302,7 +278,6 @@ a {
 
     position: relative;
 }
-
 .product-image-box img {
     width: 100%;
     height: 100%;
@@ -311,14 +286,11 @@ a {
 
     transition: 0.5s;
 }
-
 .product-card:hover .product-image-box img {
     transform: scale(1.04);
 }
-
 .wishlist {
     position: absolute;
-
     right: 15px;
     top: 15px;
 
@@ -347,7 +319,6 @@ a {
 
     text-transform: uppercase;
 }
-
 .product-info h3 {
     margin: 8px 0;
 
@@ -363,7 +334,6 @@ a {
 
     min-height: 42px;
 }
-
 .product-bottom {
     display: flex;
 
@@ -394,9 +364,6 @@ a {
 .add-button:hover {
     background: #c96d4b;
 }
-
-
-
 .why-us {
     background: #25352f;
 
@@ -686,9 +653,6 @@ a {
 .checkout-button:hover {
     background: #c96d4b;
 }
-
-
-
 footer {
     background: #1d2925;
 
@@ -751,9 +715,6 @@ footer {
 
     font-size: 12px;
 }
-
-
-
 @media (max-width: 900px) {
 
     .nav-links {
@@ -787,8 +748,6 @@ footer {
     }
 
 }
-
-
 @media (max-width: 600px) {
 
     .navbar {
@@ -814,7 +773,6 @@ footer {
     .products-grid {
         grid-template-columns: 1fr;
     }
-
     .features {
         grid-template-columns: 1fr;
     }

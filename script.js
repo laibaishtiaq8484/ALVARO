@@ -1,5 +1,4 @@
 const products = [
-
     {
         id: 1,
         name: "Luna Sofa",
@@ -8,7 +7,6 @@ const products = [
         image: "/IMG-20260820-WA0033.jpg",
         description: "A soft and comfortable sofa for relaxed evenings."
     },
-
     {
         id: 2,
         name: "Milo Lounge Chair",
@@ -17,7 +15,6 @@ const products = [
         image: "/images/IMG-20260820-WA0038.jpg",
         description: "A simple accent chair that adds warmth to your room."
     },
-
     {
         id: 3,
         name: "Oakline Dining Table",
@@ -109,9 +106,6 @@ const products = [
     }
 
 ];
-
-
-
 let cart = JSON.parse(
     localStorage.getItem("alvaroCart")
 ) || [];
@@ -205,8 +199,6 @@ function showProducts(productList) {
     });
 
 }
-
-
 function filterProducts(category) {
 
     selectedCategory = category;
@@ -231,8 +223,6 @@ function filterProducts(category) {
             });
 
     }
-
-
     if (searchText !== "") {
 
         filteredProducts =
@@ -256,18 +246,11 @@ function filterProducts(category) {
     showProducts(filteredProducts);
 
 }
-
-
-
-
 function searchProducts() {
 
     filterProducts(selectedCategory);
 
 }
-
-
-
 function addToCart(productId) {
 
     const product =
@@ -310,9 +293,6 @@ function addToCart(productId) {
     showCart();
 
 }
-
-
-
 function saveCart() {
 
     localStorage.setItem(
@@ -321,9 +301,6 @@ function saveCart() {
     );
 
 }
-
-
-
 function updateCartCount() {
 
     const totalItems =
@@ -338,9 +315,6 @@ function updateCartCount() {
         .textContent = totalItems;
 
 }
-
-
-
 function openCart() {
 
     document.getElementById("cartOverlay")
@@ -356,18 +330,11 @@ function closeCart() {
         .style.display = "none";
 
 }
-
-
-
 function showCart() {
 
     const cartItems =
         document.getElementById("cartItems");
-
-
     cartItems.innerHTML = "";
-
-
     if (cart.length === 0) {
 
         cartItems.innerHTML = `
@@ -383,8 +350,6 @@ function showCart() {
         return;
 
     }
-
-
     cart.forEach(function(item) {
 
         cartItems.innerHTML += `
@@ -448,8 +413,6 @@ function showCart() {
     calculateTotal();
 
 }
-
-
 function changeQuantity(productId, change) {
 
     const item =
@@ -484,8 +447,6 @@ function changeQuantity(productId, change) {
     showCart();
 
 }
-
-
 function removeFromCart(productId) {
 
     cart =
@@ -503,8 +464,6 @@ function removeFromCart(productId) {
     showCart();
 
 }
-
-
 function calculateTotal() {
 
     const total =
